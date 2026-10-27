@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>JC Ecuador Rides · Tours privados desde Quito</title>
+<meta name="description" content="Tours privados de un día desde Quito con un guía de turismo local: Cotopaxi, Quilotoa, Mindo, Otavalo, Baños, Papallacta y más. Te recogemos en tu hotel; organízalo por WhatsApp.">
+<meta name="theme-color" content="#111110">
+<link rel="canonical" href="https://jcecuadorrides.com/es/">
+<link rel="alternate" hreflang="en" href="https://jcecuadorrides.com/">
+<link rel="alternate" hreflang="es" href="https://jcecuadorrides.com/es/">
+<link rel="alternate" hreflang="x-default" href="https://jcecuadorrides.com/">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32.png">
+<link rel="apple-touch-icon" href="/images/icons/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JC Ecuador Rides">
+<meta property="og:title" content="JC Ecuador Rides · Tours privados desde Quito">
+<meta property="og:description" content="Tours privados de un día desde Quito con un guía de turismo local: Cotopaxi, Quilotoa, Mindo, Otavalo, Baños, Papallacta y más. Te recogemos en tu hotel; organízalo por WhatsApp.">
+<meta property="og:url" content="https://jcecuadorrides.com/es/">
+<meta property="og:image" content="https://jcecuadorrides.com/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_EC">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "JC Ecuador Rides", "url": "https://jcecuadorrides.com/es/", "image": "https://jcecuadorrides.com/images/og-image.jpg", "logo": "https://jcecuadorrides.com/images/icons/icon-512.png", "description": "Tours privados de un día desde Quito con un guía de turismo local: Cotopaxi, Quilotoa, Mindo, Otavalo, Baños, Papallacta y más. Te recogemos en tu hotel; organízalo por WhatsApp.", "telephone": "+593995733278", "areaServed": {"@type": "City", "name": "Quito"}, "inLanguage": "es", "address": {"@type": "PostalAddress", "addressLocality": "Quito", "addressCountry": "EC"}, "sameAs": ["https://www.instagram.com/jcecuadorrides/", "https://www.facebook.com/people/JC-Ecuador-Rides/61593376521536/"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: full-screen hook hero -> destination list (left) + sticky preview panel (right, desktop) / inline accordion (mobile) -> guide -> ride -> steps -> FAQ -> close. Dark brand: black + gold. Bilingual EN | ES. */
+:root{
+  --bg:#111110; --panel:#1a1918; --panel-2:#22201d; --line:#33302a;
+  --ink:#f4f0e6; --muted:#a39c8e; --gold:#c9a84c; --gold-hi:#e2c46e; --gold-soft:#c9a84c22; --gold-ink:#15120a;
+  --f-display:"Big Shoulders Display", "Arial Narrow", Impact, sans-serif;
+  --f-body:"Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.55}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1180px;margin-inline:auto;padding-inline:16px}
+@media (min-width:720px){.wrap{padding-inline:32px}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--gold);color:var(--gold-ink);font-weight:700;text-decoration:none;border-radius:8px;padding:12px 20px;border:0;cursor:pointer;font-size:15px}
+.btn:hover{background:var(--gold-hi)}
+.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:600}
+
+/* Top bar */
+.bar{position:fixed;inset:0 0 auto 0;z-index:10;padding-top:env(safe-area-inset-top,0px);transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
+.bar.solid{background:rgba(17,17,16,.94);border-bottom-color:var(--line);backdrop-filter:blur(8px)}
+.bar .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-block:14px}
+.logo{display:flex;align-items:baseline;gap:8px;text-decoration:none;min-width:0}
+.logo b{font-family:var(--f-display);font-weight:900;font-size:28px;color:var(--gold)}
+.logo span{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+@media (max-width:420px){.logo span{display:none}}
+.bar-right{display:flex;align-items:center;gap:12px}
+.bar .btn{padding:9px 14px;font-size:14px}
+.lang{display:flex;align-items:center;border:1px solid var(--line);border-radius:999px;padding:3px;background:rgba(17,17,16,.6)}
+.lang a,.lang button{all:unset;cursor:pointer;font-family:var(--f-mono);font-size:13px;font-weight:500;padding:5px 10px;border-radius:999px;color:var(--muted)}
+.lang a[aria-current="page"],.lang button[aria-pressed="true"]{background:var(--gold);color:var(--gold-ink)}
+.lang a:focus-visible,.lang button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.lang span{color:var(--line);font-size:12px}
+
+/* Hero */
+.hero{position:relative;min-height:92svh;display:flex;align-items:center;overflow:hidden;padding-block:96px 120px}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 60%;max-width:none}
+.hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(17,17,16,.92) 0%,rgba(17,17,16,.72) 45%,rgba(17,17,16,.25) 100%),linear-gradient(0deg,rgba(17,17,16,1) 0%,rgba(17,17,16,0) 35%)}
+@media (max-width:720px){.hero-shade{background:linear-gradient(0deg,rgba(17,17,16,.97) 10%,rgba(17,17,16,.6) 60%,rgba(17,17,16,.35) 100%)}}
+.hero .wrap{position:relative;width:100%}
+.hero h1{font-family:var(--f-display);font-weight:900;font-size:clamp(60px,12.5vw,164px);line-height:.84;margin:18px 0 22px;text-transform:uppercase;letter-spacing:-.005em}
+.hero h1 em{font-style:normal;color:var(--gold);display:block}
+.hero p{font-size:clamp(17px,2vw,21px);color:var(--muted);max-width:40ch;margin:0}
+.scroll-cue{position:absolute;left:50%;bottom:28px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;white-space:nowrap}
+.scroll-cue .arrow{width:40px;height:40px;border:1px solid var(--gold);border-radius:999px;display:grid;place-items:center;color:var(--gold)}
+@media (prefers-reduced-motion:no-preference){
+  .scroll-cue .arrow{animation:bob 1.8s ease-in-out infinite}
+  @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(7px)}}
+}
+
+/* Trips */
+.trips{padding-block:72px 40px}
+.trips-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:16px;margin-bottom:32px}
+.trips-head h2{font-family:var(--f-display);font-weight:900;font-size:clamp(40px,6vw,72px);line-height:.9;margin:8px 0 0;text-transform:uppercase;text-wrap:balance}
+.trips-head p{color:var(--muted);margin:0;max-width:34ch}
+.trips-body{display:grid;gap:40px}
+@media (min-width:960px){.trips-body{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:start}}
+.group{font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding:22px 0 8px;border-bottom:1px solid var(--line)}
+.group:first-child{padding-top:0}
+.dest{border-bottom:1px solid var(--line)}
+.dest-btn{all:unset;box-sizing:border-box;width:100%;cursor:pointer;display:grid;grid-template-columns:44px minmax(0,1fr) auto;align-items:center;gap:8px;padding:14px 0}
+.dest-btn:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.dest-num{font-family:var(--f-mono);font-size:13px;color:var(--muted)}
+.dest-name{font-family:var(--f-display);font-weight:800;font-size:clamp(30px,4.2vw,46px);line-height:1;text-transform:uppercase;transition:color .2s, transform .2s}
+.dest-meta{font-family:var(--f-mono);font-size:13px;color:var(--muted);white-space:nowrap}
+.dest.active .dest-name{color:var(--gold)}
+@media (prefers-reduced-motion:no-preference){.dest.active .dest-name{transform:translateX(8px)}}
+.dest-inline{display:grid;grid-template-rows:0fr;transition:grid-template-rows .3s ease}
+.dest-inline > div{overflow:hidden}
+.dest.open .dest-inline{grid-template-rows:1fr}
+.dest-inline .inner{padding:0 0 20px 52px;display:grid;gap:14px}
+@media (max-width:480px){.dest-inline .inner{padding-left:0}}
+@media (min-width:960px){.dest-inline{display:none}}
+
+/* Sticky panel */
+.panel{display:none}
+@media (min-width:960px){
+  .panel{display:block;position:sticky;top:96px;background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+}
+.panel svg{display:block;width:100%;height:auto;background:linear-gradient(180deg,#191816,#1f1d1a)}
+.photo-frame{position:relative;width:100%;max-width:100%;aspect-ratio:4/3;overflow:hidden;background:#0d0d0c}
+.photo-frame .bg{position:absolute;inset:-24px;background-size:cover;background-position:center;filter:blur(18px) brightness(.4)}
+.photo-frame img{position:relative;display:block;width:100%;height:100%;object-fit:contain;max-width:100%}
+.dest-inline .photo-frame{border-radius:10px}
+.panel-body{padding:24px 28px 28px;display:grid;gap:16px}
+.panel-name{font-family:var(--f-display);font-weight:900;font-size:56px;line-height:.9;text-transform:uppercase;margin:0}
+.hook{font-size:20px;line-height:1.45;margin:0;color:var(--ink);text-wrap:pretty}
+.dest-inline .hook{font-size:17px}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.facts li{font-family:var(--f-mono);font-size:13px;border:1px solid var(--line);border-radius:999px;padding:5px 12px;color:var(--muted)}
+.facts li b{color:var(--ink);font-weight:500}
+.fade{animation:none}
+@media (prefers-reduced-motion:no-preference){
+  .fade{animation:fadeUp .35s ease}
+  @keyframes fadeUp{from{opacity:.25;transform:translateY(6px)}to{opacity:1;transform:none}}
+}
+
+/* Sections */
+section.block{padding-block:72px;border-top:1px solid var(--line)}
+section.block h2{font-family:var(--f-display);font-weight:900;font-size:clamp(38px,5.5vw,64px);line-height:.92;text-transform:uppercase;margin:8px 0 24px;text-wrap:balance}
+.guide{display:grid;gap:32px}
+@media (min-width:860px){.guide{grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);align-items:center}}
+.portrait-img{width:100%;max-width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:14px}
+.guide p{color:var(--muted);font-size:18px;max-width:52ch;margin:0 0 14px}
+.guide p b{color:var(--ink)}
+.moments{display:grid;gap:12px;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:28px}
+.moments figure{margin:0}
+.moments img{width:100%;max-width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px;display:block}
+.moments figcaption{font-size:13px;color:var(--muted);margin-top:6px}
+@media (max-width:600px){.moments{grid-template-columns:1fr 1fr}.moments figure:last-child{grid-column:1/-1}.moments figure:last-child img{aspect-ratio:16/10}}
+.ride{display:grid;gap:12px;grid-template-columns:1fr}
+@media (min-width:760px){.ride{grid-template-columns:1.6fr 1fr 1fr}}
+.ride figure{margin:0;position:relative}
+.ride img{width:100%;max-width:100%;height:100%;min-height:260px;object-fit:cover;border-radius:12px;display:block}
+.ride figcaption{position:absolute;left:12px;bottom:12px;background:rgba(17,17,16,.82);padding:6px 10px;border-radius:6px;font-size:13px}
+.ride-points{display:flex;flex-wrap:wrap;gap:8px 20px;margin:20px 0 0;padding:0;list-style:none;color:var(--muted)}
+.ride-points li::before{content:"— ";color:var(--gold)}
+.steps{display:grid;gap:16px;list-style:none;margin:0;padding:0;counter-reset:s}
+@media (min-width:760px){.steps{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.steps li{border-top:2px solid var(--gold);padding-top:16px;counter-increment:s}
+.steps li::before{content:"0" counter(s);font-family:var(--f-mono);font-size:13px;color:var(--gold);display:block;margin-bottom:8px}
+.steps b{display:block;font-size:18px;margin-bottom:4px}
+.steps span{color:var(--muted)}
+.faq details{border-bottom:1px solid var(--line);padding-block:16px}
+.faq summary{cursor:pointer;font-weight:600;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--f-mono);color:var(--gold)}
+.faq details[open] summary::after{content:"−"}
+.faq p{color:var(--muted);margin:10px 0 0;max-width:66ch}
+.close{display:grid;gap:18px}
+.close p{color:var(--muted);margin:0;font-size:18px;max-width:44ch}
+.close .contact{font-family:var(--f-mono);font-size:14px;color:var(--muted)}
+.social p{color:var(--muted);font-size:18px;margin:0 0 24px;max-width:44ch}
+.social-links{display:grid;gap:12px;grid-template-columns:1fr}
+@media (min-width:640px){.social-links{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.social-links a{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 12px;align-items:center;text-decoration:none;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 20px;transition:border-color .2s}
+.social-links a:hover{border-color:var(--gold)}
+.social-links .net{font-family:var(--f-display);font-weight:900;font-size:30px;text-transform:uppercase;line-height:1}
+.social-links .handle{grid-column:1;font-family:var(--f-mono);font-size:14px;color:var(--muted);min-width:0;overflow-wrap:anywhere}
+.social-links .go{grid-row:1/3;grid-column:2;color:var(--gold);font-size:24px}
+footer{border-top:1px solid var(--line);padding-block:24px 40px;color:var(--muted);font-size:13px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+
+<header class="bar" id="bar">
+  <div class="wrap">
+    <a class="logo" href="#top"><b>JC</b><span>Ecuador Rides</span></a>
+    <div class="bar-right">
+      <div class="lang" role="group" aria-label="Language / Idioma">
+        <a href="/" hreflang="en" lang="en" aria-label="English">EN</a>
+        <span aria-hidden="true">|</span>
+        <a href="/es/" hreflang="es" lang="es" aria-label="Español" aria-current="page">ES</a>
+      </div>
+      <a class="btn" data-wa="general" data-i18n="nav.cta" href="#" target="_blank" rel="noopener">Escríbenos</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <img class="hero-img" src="/images/web/hero-suv-puembo.webp" alt="" aria-hidden="true">
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="eyebrow" data-i18n="hero.eyebrow">Tours privados desde Quito</div>
+      <h1 data-i18n="hero.title">Ecuador, <em>un día a la vez.</em></h1>
+      <p data-i18n="hero.lede">Volcanes, bosque nublado, aguas termales y lagunas en cráteres. Todo a un día de camino, con tu propio conductor y a tu ritmo.</p>
+    </div>
+    <a class="scroll-cue" href="#trips">
+      <span data-i18n="hero.cue">Elige tu día</span>
+      <span class="arrow" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2v11M3 8l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </a>
+  </section>
+
+  <section class="trips" id="trips">
+    <div class="wrap">
+      <div class="trips-head">
+        <div>
+          <div class="eyebrow" data-i18n="trips.eyebrow">9 tours · 1 conductor que conoce el camino</div>
+          <h2 data-i18n="trips.title">¿Dónde quieres despertar mañana?</h2>
+        </div>
+        <p data-i18n="trips.lede">Pasa el cursor por un destino para ver por qué vale el viaje. En el celular, tócalo.</p>
+      </div>
+      <div class="trips-body">
+        <div id="list"></div>
+        <aside class="panel" id="panel" aria-live="polite"></aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="guide">
+    <div class="wrap guide">
+      <img class="portrait-img" src="/images/web/juan-carlos-retrato.webp" data-i18n-alt="alt.portrait" alt="Juan Carlos Zurita sonriendo en un parque de Quito" loading="lazy">
+      <div>
+        <div class="eyebrow" data-i18n="guide.eyebrow">Quién te recoge</div>
+        <h2 data-i18n="guide.title">Tu conductor también es tu guía</h2>
+        <p data-i18n="guide.p1"><b>Juan Carlos Zurita</b> es guía de turismo de profesión. Ha guiado grupos en la Mitad del Mundo y se sabe estas rutas de memoria.</p>
+        <p data-i18n="guide.p2">Por eso tu viaje es mucho más que un traslado: vas a saber qué volcán estás viendo, dónde come la gente de aquí y a qué hora llegar para evitar las multitudes.</p>
+        <div class="moments">
+          <figure><img src="/images/web/cliente-llegada.webp" data-i18n-alt="alt.pickup" alt="Juan Carlos con una viajera junto a la SUV después de recogerla" loading="lazy"><figcaption data-i18n="guide.m1">Recogida lista</figcaption></figure>
+          <figure><img src="/images/web/cliente-en-el-auto.webp" data-i18n-alt="alt.road" alt="Juan Carlos y una viajera sonriendo dentro de la SUV" loading="lazy"><figcaption data-i18n="guide.m2">En el camino</figcaption></figure>
+          <figure><img src="/images/web/mitad-del-mundo-grupo.webp" data-i18n-alt="alt.group" alt="Juan Carlos guiando a un grupo en la línea ecuatorial" loading="lazy"><figcaption data-i18n="guide.m3">Guiando en la Mitad del Mundo</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="ride">
+    <div class="wrap">
+      <div class="eyebrow" data-i18n="ride.eyebrow">Tu vehículo</div>
+      <h2 data-i18n="ride.title">Espacio para todos. Y para las maletas.</h2>
+      <div class="ride">
+        <figure><img src="/images/web/suv-lateral.webp" data-i18n-alt="alt.suv" alt="SUV DFSK Glory negra" loading="lazy"><figcaption data-i18n="ride.c1">SUV DFSK Glory</figcaption></figure>
+        <figure><img src="/images/web/suv-maletero.webp" data-i18n-alt="alt.trunk" alt="Maletero de la SUV con cuatro maletas" loading="lazy"><figcaption data-i18n="ride.c2">Caben las maletas</figcaption></figure>
+        <figure><img src="/images/web/suv-basilica.webp" data-i18n-alt="alt.basilica" alt="La SUV estacionada frente a la Basílica en Quito" loading="lazy"><figcaption data-i18n="ride.c3">Centro histórico</figcaption></figure>
+      </div>
+      <ul class="ride-points"><li data-i18n="ride.p1">Privado, nunca compartido</li><li data-i18n="ride.p2">Hasta 4 pasajeros</li><li data-i18n="ride.p3">Te recogemos en tu hotel</li></ul>
+    </div>
+  </section>
+
+  <section class="block" id="how">
+    <div class="wrap">
+      <div class="eyebrow" data-i18n="how.eyebrow">Cómo funciona</div>
+      <h2 data-i18n="how.title">Reservas en tres mensajes</h2>
+      <ol class="steps">
+        <li><b data-i18n="how.s1t">Elige tu tour</b><span data-i18n="how.s1">Toca "¡Quiero este tour!" y WhatsApp se abre con todo listo.</span></li>
+        <li><b data-i18n="how.s2t">Recibe un precio fijo</b><span data-i18n="how.s2">Para todo tu grupo, con hora de recogida y qué llevar.</span></li>
+        <li><b data-i18n="how.s3t">Disfruta el día</b><span data-i18n="how.s3">Te recogemos en tu hotel. Pagas el mismo día, en efectivo o por transferencia.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="block faq" id="faq">
+    <div class="wrap">
+      <div class="eyebrow" data-i18n="faq.eyebrow">Bueno saber</div>
+      <h2 data-i18n="faq.title">Antes de ir</h2>
+      <details><summary data-i18n="faq.q1">¿El precio es por persona o por grupo?</summary><p data-i18n="faq.a1">Por vehículo, para todo tu grupo. Mientras más sean, menos paga cada uno.</p></details>
+      <details><summary data-i18n="faq.q2">¿Me afectará la altura?</summary><p data-i18n="faq.a2">Quito ya está a 2.850 m. Deja Cotopaxi, Quilotoa y Papallacta para tu segundo o tercer día, toma agua y estarás bien.</p></details>
+      <details><summary data-i18n="faq.q3">¿Las entradas están incluidas?</summary><p data-i18n="faq.a3">Las entradas, las termas y los teleféricos se pagan en el lugar, así solo pagas lo que eliges hacer. Te decimos los precios antes de ir.</p></details>
+      <details><summary data-i18n="faq.q4">¿Cómo pago?</summary><p data-i18n="faq.a4">El mismo día, en efectivo (USD) o por transferencia. ¿Prefieres tarjeta o PayPal? Te enviamos un enlace de pago seguro.</p></details>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap close">
+      <h2 data-i18n="close.title">Tu Ecuador está a un mensaje</h2>
+      <p data-i18n="close.lede">Cuéntanos la fecha y cuántos son. Del resto nos encargamos nosotros.</p>
+      <div><a class="btn" data-wa="general" data-i18n="close.cta" href="#" target="_blank" rel="noopener">¡Armemos tu día!</a></div>
+      <div class="contact">+593 99 573 3278 · jcecuadorrides@gmail.com</div>
+    </div>
+  </section>
+  <section class="block social" id="social">
+    <div class="wrap">
+      <div class="eyebrow" data-i18n="social.eyebrow">Sigue los viajes</div>
+      <h2 data-i18n="social.title">Mira a dónde fuimos esta semana</h2>
+      <p data-i18n="social.lede">Fotos reales del camino, nuevos destinos y consejos de viaje desde Quito.</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/jcecuadorrides/" target="_blank" rel="noopener"><span class="net">Instagram</span><span class="handle">@jcecuadorrides</span><span class="go" aria-hidden="true">↗</span></a>
+        <a href="https://www.facebook.com/people/JC-Ecuador-Rides/61593376521536/" target="_blank" rel="noopener"><span class="net">Facebook</span><span class="handle">JC Ecuador Rides</span><span class="go" aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>JC Ecuador Rides · Quito, Ecuador</span>
+    <span><a href="/privacy.html" data-i18n="foot.privacy">Política de privacidad</a> · <a href="#" data-consent-open data-i18n="foot.cookies">Preferencias de cookies</a></span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var WA = 'https://wa.me/593995733278?text=';
+
+  // ---------- Spanish copy for the static page (English lives in the HTML) ----------
+  var ES = {
+    'nav.cta':'Escríbenos',
+    'hero.eyebrow':'Tours privados desde Quito',
+    'hero.title':'Ecuador, <em>un día a la vez.</em>',
+    'hero.lede':'Volcanes, bosque nublado, aguas termales y lagunas en cráteres. Todo a un día de camino, con tu propio conductor y a tu ritmo.',
+    'hero.cue':'Elige tu día',
+    'trips.eyebrow':'9 tours · 1 conductor que conoce el camino',
+    'trips.title':'¿Dónde quieres despertar mañana?',
+    'trips.lede':'Pasa el cursor por un destino para ver por qué vale el viaje. En el celular, tócalo.',
+    'guide.eyebrow':'Quién te recoge',
+    'guide.title':'Tu conductor también es tu guía',
+    'guide.p1':'<b>Juan Carlos Zurita</b> es guía de turismo de profesión. Ha guiado grupos en la Mitad del Mundo y se sabe estas rutas de memoria.',
+    'guide.p2':'Por eso tu viaje es mucho más que un traslado: vas a saber qué volcán estás viendo, dónde come la gente de aquí y a qué hora llegar para evitar las multitudes.',
+    'guide.m1':'Recogida lista', 'guide.m2':'En el camino', 'guide.m3':'Guiando en la Mitad del Mundo',
+    'ride.eyebrow':'Tu vehículo',
+    'ride.title':'Espacio para todos. Y para las maletas.',
+    'ride.c1':'SUV DFSK Glory', 'ride.c2':'Caben las maletas', 'ride.c3':'Centro histórico',
+    'ride.p1':'Privado, nunca compartido', 'ride.p2':'Hasta 4 pasajeros', 'ride.p3':'Te recogemos en tu hotel',
+    'how.eyebrow':'Cómo funciona',
+    'how.title':'Reservas en tres mensajes',
+    'how.s1t':'Elige tu tour', 'how.s1':'Toca "¡Quiero este tour!" y WhatsApp se abre con todo listo.',
+    'how.s2t':'Recibe un precio fijo', 'how.s2':'Para todo tu grupo, con hora de recogida y qué llevar.',
+    'how.s3t':'Disfruta el día', 'how.s3':'Te recogemos en tu hotel. Pagas el mismo día, en efectivo o por transferencia.',
+    'faq.eyebrow':'Bueno saber',
+    'faq.title':'Antes de ir',
+    'faq.q1':'¿El precio es por persona o por grupo?', 'faq.a1':'Por vehículo, para todo tu grupo. Mientras más sean, menos paga cada uno.',
+    'faq.q2':'¿Me afectará la altura?', 'faq.a2':'Quito ya está a 2.850 m. Deja Cotopaxi, Quilotoa y Papallacta para tu segundo o tercer día, toma agua y estarás bien.',
+    'faq.q3':'¿Las entradas están incluidas?', 'faq.a3':'Las entradas, las termas y los teleféricos se pagan en el lugar, así solo pagas lo que eliges hacer. Te decimos los precios antes de ir.',
+    'faq.q4':'¿Cómo pago?', 'faq.a4':'El mismo día, en efectivo (USD) o por transferencia. ¿Prefieres tarjeta o PayPal? Te enviamos un enlace de pago seguro.',
+    'close.title':'Tu Ecuador está a un mensaje',
+    'close.lede':'Cuéntanos la fecha y cuántos son. Del resto nos encargamos nosotros.',
+    'close.cta':'¡Armemos tu día!',
+    'social.eyebrow':'Sigue los viajes',
+    'social.title':'Mira a dónde fuimos esta semana',
+    'social.lede':'Fotos reales del camino, nuevos destinos y consejos de viaje desde Quito.',
+    'foot.privacy':'Política de privacidad', 'foot.cookies':'Preferencias de cookies',
+    'alt.portrait':'Juan Carlos Zurita sonriendo en un parque de Quito',
+    'alt.pickup':'Juan Carlos con una viajera junto a la SUV después de recogerla',
+    'alt.road':'Juan Carlos y una viajera sonriendo dentro de la SUV',
+    'alt.group':'Juan Carlos guiando a un grupo en la línea ecuatorial',
+    'alt.suv':'SUV DFSK Glory negra',
+    'alt.trunk':'Maletero de la SUV con cuatro maletas',
+    'alt.basilica':'La SUV estacionada frente a la Basílica en Quito'
+  };
+
+  // ---------- Strings used by the generated parts ----------
+  var UI = {
+    en:{ groups:{half:'Half day · back for lunch', full:'Full day', long:'Long day · worth every minute'},
+         from:'from Quito', drive:'drive', total:'total', altitude:'altitude', plan:"Let's do it!", quito:'Quito 2,850 m', locale:'en-US',
+         sits:function(n,a){ return n + ' sits at ' + a + ' meters, compared with Quito at 2,850 meters'; },
+         waGeneral:"Hi Juan Carlos! I'd love to plan a day trip from Quito.",
+         waTrip:function(n){ return "Hi Juan Carlos! I'm interested in the " + n + " trip.\nDate: \nPeople: \nHotel: "; } },
+    es:{ groups:{half:'Medio día · de vuelta para el almuerzo', full:'Día completo', long:'Día largo · vale cada minuto'},
+         from:'desde Quito', drive:'de viaje', total:'en total', altitude:'de altitud', plan:'¡Quiero este tour!', quito:'Quito 2.850 m', locale:'es-EC',
+         sits:function(n,a){ return n + ' está a ' + a + ' metros, comparado con Quito a 2.850 metros'; },
+         waGeneral:'¡Hola Juan Carlos! Quiero armar un tour desde Quito.',
+         waTrip:function(n){ return '¡Hola Juan Carlos! Me interesa el tour a ' + n + '.\nFecha: \nPersonas: \nHotel: '; } }
+  };
+
+  var TOURS = [
+    {id:'panecillo', g:'half', name:'El Panecillo', drive:'20 min', time:'3 h', alt:3000,
+     photo:'/images/web/panecillo-juan-carlos.webp',
+     photoAlt:{en:'Juan Carlos in front of the Virgin of El Panecillo', es:'Juan Carlos frente a la Virgen del Panecillo'},
+     hook:{en:'The whole colonial city at your feet, watched over by a winged Virgin. From up here, Quito finally makes sense.',
+           es:'Toda la ciudad colonial a tus pies, bajo la mirada de una Virgen con alas. Desde aquí arriba, Quito por fin tiene sentido.'}},
+    {id:'teleferico', g:'half', name:'TelefériQo', drive:'20 min', time:'3–4 h', alt:3945,
+     hook:{en:'One cable car ride and Quito is a thousand meters below your feet. On a clear morning, Cotopaxi says hello.',
+           es:'Un viaje en teleférico y Quito queda mil metros bajo tus pies. En una mañana despejada, el Cotopaxi te saluda.'}},
+    {id:'mitad', g:'half', name:'Mitad del Mundo', drive:'50 min', time:'4–5 h', alt:2480,
+     photo:'/images/web/mitad-del-mundo-juan-carlos-guia.webp',
+     photoAlt:{en:'Juan Carlos guiding travelers at the equator museum', es:'Juan Carlos guiando a viajeros en el museo de la línea ecuatorial'},
+     hook:{en:'One foot in the north, one in the south. Take the photo everyone wants, then find out why the famous line is in the wrong place.',
+           es:'Un pie en el norte y otro en el sur. Tómate la foto que todos quieren y descubre por qué la línea famosa está en el lugar equivocado.'}},
+    {id:'papallacta', g:'full', name:'Papallacta', drive:'1 h 30', time:'7–8 h', alt:3300,
+     hook:{en:'Sink into hot volcanic water at 3,300 meters while clouds roll over the Andes. The best cure for a long flight.',
+           es:'Sumérgete en agua volcánica caliente a 3.300 metros mientras las nubes pasan sobre los Andes. La mejor cura después de un vuelo largo.'}},
+    {id:'mindo', g:'full', name:'Mindo', drive:'2 h', time:'9 h', alt:1250,
+     hook:{en:'Trade the Andes for the cloud forest. Hummingbirds at arm\'s length, hidden waterfalls and chocolate made where it grows.',
+           es:'Cambia los Andes por el bosque nublado. Colibríes al alcance de la mano, cascadas escondidas y chocolate hecho donde crece el cacao.'}},
+    {id:'otavalo', g:'full', name:'Otavalo', drive:'2 h', time:'9–10 h', alt:2550,
+     hook:{en:'Wool, colors and friendly bargaining in the Andes\' most famous market, with a sacred waterfall on the way home.',
+           es:'Lana, colores y regateo amable en el mercado más famoso de los Andes, con una cascada sagrada de regreso.'}},
+    {id:'cotopaxi', g:'full', name:'Cotopaxi', drive:'2 h', time:'9–10 h', alt:3800,
+     hook:{en:'Walk at the foot of a perfect snow-capped cone, one of the highest active volcanoes on Earth. Wild horses included.',
+           es:'Camina al pie de un cono nevado perfecto, uno de los volcanes activos más altos del mundo. Caballos salvajes incluidos.'}},
+    {id:'quilotoa', g:'long', name:'Quilotoa', drive:'3 h 30', time:'11–12 h', alt:3900,
+     hook:{en:'Stand on the rim of a volcano and look down at a lake so turquoise it looks edited. It isn\'t.',
+           es:'Párate en el borde de un volcán y mira una laguna tan turquesa que parece editada. No lo está.'}},
+    {id:'banos', g:'long', name:'Baños', drive:'3 h 30', time:'12 h', alt:1820,
+     hook:{en:'Thundering waterfalls, a swing at the edge of the world and the road where the Andes drop into the Amazon.',
+           es:'Cascadas que retumban, un columpio al borde del mundo y la carretera donde los Andes bajan a la Amazonía.'}}
+  ];
+  var GROUP_ORDER = ['half','full','long'];
+
+  var lang = document.documentElement.lang === 'es' ? 'es' : 'en', activeId = 'cotopaxi';
+  function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  function t(){ return UI[lang]; }
+  function fmtAlt(a){ return a.toLocaleString(t().locale); }
+  function waLink(trip){ return WA + encodeURIComponent(trip ? t().waTrip(trip.name) : t().waGeneral); }
+  // vertical photos are shown whole (zoomed out), over a blurred copy of themselves
+  function photoFrame(trip){
+    return '<div class="photo-frame"><div class="bg" style="background-image:url(' + trip.photo + ')"></div><img src="' + trip.photo + '" alt="' + esc(trip.photoAlt[lang]) + '" loading="lazy"></div>';
+  }
+  function facts(trip){
+    return '<ul class="facts"><li><b>' + trip.drive + '</b> ' + t().drive + '</li><li><b>' + trip.time + '</b> ' + t().total + '</li><li><b>' + fmtAlt(trip.alt) + ' m</b> ' + t().altitude + '</li></ul>';
+  }
+
+  // ---------- List ----------
+  var list = document.getElementById('list'), panel = document.getElementById('panel');
+  var desktop = window.matchMedia('(min-width:960px)');
+  var openId = null; // destination open in the phone accordion, kept when the language changes
+  function renderList(){
+    var html = '', n = 0;
+    GROUP_ORDER.forEach(function(g){
+      html += '<div class="group">' + t().groups[g] + '</div>';
+      TOURS.filter(function(x){ return x.g === g; }).forEach(function(trip){
+        n++;
+        var isOpen = !desktop.matches && trip.id === openId;
+        html += '<div class="dest' + (isOpen ? ' open active' : (trip.id === activeId && desktop.matches ? ' active' : '')) + '" data-id="' + trip.id + '">' +
+          '<button class="dest-btn" type="button" aria-expanded="' + isOpen + '" aria-controls="in-' + trip.id + '">' +
+            '<span class="dest-num">' + String(n).padStart(2,'0') + '</span>' +
+            '<span class="dest-name">' + esc(trip.name) + '</span>' +
+            '<span class="dest-meta">' + trip.drive + '</span>' +
+          '</button>' +
+          '<div class="dest-inline" id="in-' + trip.id + '"><div><div class="inner">' +
+            (trip.photo ? photoFrame(trip) : '') +
+            '<p class="hook">' + esc(trip.hook[lang]) + '</p>' + facts(trip) +
+            '<div><a class="btn" data-trip="' + trip.id + '" href="' + waLink(trip) + '" target="_blank" rel="noopener">' + t().plan + '</a></div>' +
+          '</div></div></div>' +
+        '</div>';
+      });
+    });
+    list.innerHTML = html;
+    bindList();
+  }
+
+  // ---------- Panel ----------
+  function ridgePath(alt, w, h){
+    // a mountain whose peak height is drawn to scale: 0 m = bottom, 4,000 m = top margin
+    var base = h - 18, top = 26, peakY = base - (alt / 4000) * (base - top), cx = w * 0.56;
+    var pts = [[0,base-10],[w*0.14,base-28],[w*0.28,base-(base-peakY)*0.42],[w*0.4,base-(base-peakY)*0.3],[cx,peakY],[w*0.7,base-(base-peakY)*0.48],[w*0.82,base-(base-peakY)*0.34],[w,base-22],[w,h],[0,h]];
+    return {d:'M' + pts.map(function(p){ return p[0].toFixed(1) + ' ' + p[1].toFixed(1); }).join(' L') + ' Z', peakY:peakY, cx:cx, base:base};
+  }
+  function renderPanel(){
+    var trip = TOURS.filter(function(x){ return x.id === activeId; })[0];
+    var w = 560, h = 210, r = ridgePath(trip.alt, w, h), qy = r.base - (2850 / 4000) * (r.base - 26);
+    panel.innerHTML = (trip.photo ? photoFrame(trip) :
+      '<svg viewBox="0 0 ' + w + ' ' + h + '" role="img" aria-label="' + esc(t().sits(trip.name, fmtAlt(trip.alt))) + '">' +
+        '<line x1="0" x2="' + w + '" y1="' + qy.toFixed(1) + '" y2="' + qy.toFixed(1) + '" stroke="#f4f0e6" stroke-opacity=".35" stroke-dasharray="4 5"/>' +
+        '<text x="14" y="' + (qy - 6).toFixed(1) + '" fill="#a39c8e" font-family="IBM Plex Mono, monospace" font-size="11.5">' + t().quito + '</text>' +
+        '<path d="' + r.d + '" fill="#c9a84c" fill-opacity=".16" stroke="#c9a84c" stroke-width="1.5"/>' +
+        '<circle cx="' + r.cx.toFixed(1) + '" cy="' + r.peakY.toFixed(1) + '" r="4" fill="#c9a84c"/>' +
+        '<text x="' + (r.cx + 10).toFixed(1) + '" y="' + (r.peakY - 6).toFixed(1) + '" fill="#f4f0e6" font-family="IBM Plex Mono, monospace" font-size="12.5">' + fmtAlt(trip.alt) + ' m</text>' +
+      '</svg>') +
+      '<div class="panel-body fade">' +
+        '<div class="eyebrow">' + t().groups[trip.g].split(' · ')[0] + ' ' + t().from + '</div>' +
+        '<h3 class="panel-name">' + esc(trip.name) + '</h3>' +
+        '<p class="hook">' + esc(trip.hook[lang]) + '</p>' + facts(trip) +
+        '<div><a class="btn" data-trip="' + trip.id + '" href="' + waLink(trip) + '" target="_blank" rel="noopener">' + t().plan + '</a></div>' +
+      '</div>';
+  }
+
+  // ---------- Interaction ----------
+  function activate(id, byUser){
+    if (id === activeId && panel.innerHTML) return;
+    activeId = id;
+    if (byUser) trackView(id);
+    list.querySelectorAll('.dest').forEach(function(el){ el.classList.toggle('active', el.getAttribute('data-id') === id); });
+    renderPanel();
+  }
+  function bindList(){
+    var items = list.querySelectorAll('.dest');
+    items.forEach(function(el){
+      var id = el.getAttribute('data-id'), btn = el.querySelector('.dest-btn');
+      el.addEventListener('mouseenter', function(){ if (desktop.matches) activate(id, true); });
+      btn.addEventListener('focus', function(){ if (desktop.matches) activate(id, true); });
+      btn.addEventListener('click', function(){
+        if (desktop.matches){ activate(id, true); return; }
+        var open = !el.classList.contains('open');
+        openId = open ? id : null;
+        items.forEach(function(o){ o.classList.remove('open','active'); o.querySelector('.dest-btn').setAttribute('aria-expanded','false'); });
+        if (open){ el.classList.add('open','active'); btn.setAttribute('aria-expanded','true'); trackView(id); }
+      });
+    });
+  }
+
+  // ---------- Language ----------
+  var EN = {}, ENALT = {};
+  document.querySelectorAll('[data-i18n]').forEach(function(el){ EN[el.getAttribute('data-i18n')] = el.innerHTML; });
+  document.querySelectorAll('[data-i18n-alt]').forEach(function(el){ ENALT[el.getAttribute('data-i18n-alt')] = el.getAttribute('alt'); });
+  function setLang(l){
+    lang = l;
+    document.documentElement.lang = l;
+    document.querySelectorAll('[data-i18n]').forEach(function(el){ var k = el.getAttribute('data-i18n'); el.innerHTML = l === 'es' ? (ES[k] || EN[k]) : EN[k]; });
+    document.querySelectorAll('[data-i18n-alt]').forEach(function(el){ var k = el.getAttribute('data-i18n-alt'); el.setAttribute('alt', l === 'es' ? (ES[k] || ENALT[k]) : ENALT[k]); });
+    document.querySelectorAll('[data-wa="general"]').forEach(function(a){ a.href = waLink(null); });
+    document.querySelectorAll('.lang button').forEach(function(b){ b.setAttribute('aria-pressed', b.getAttribute('data-lang') === l ? 'true' : 'false'); });
+    renderList(); renderPanel();
+    try { localStorage.setItem('jc-lang', l); } catch(e){}
+    document.dispatchEvent(new Event('jc:lang'));
+  }
+  document.querySelectorAll('.lang a').forEach(function(a){ a.addEventListener('click', function(){ var l = a.getAttribute('hreflang'); if (l !== lang) track('language_switch', {language:l}); }); });
+  setLang(lang);
+
+  // ---------- Measurement ----------
+  // Sends events only to the tools the visitor accepted in the cookie banner (see consent.js).
+  // Nothing is sent before consent, and nothing at all while the IDs in consent.js are placeholders.
+  function track(name, params){
+    try {
+      var c = window.jcConsent && window.jcConsent.state();
+      if (!c) return;
+      params = params || {};
+      if (c.analytics){
+        if (window.gtag) window.gtag('event', name, params);
+        if (window.clarity) window.clarity('event', name);
+      }
+      if (c.marketing && window.fbq){
+        var meta = {view_item:'ViewContent', generate_lead: params.trip ? 'Lead' : 'Contact'}[name];
+        if (meta) window.fbq('track', meta, params.trip ? {content_name:params.trip} : {});
+      }
+    } catch(e){}
+  }
+  var viewed = {};
+  function trackView(id){
+    if (viewed[id]) return; viewed[id] = true; // once per tour per visit, so hovering around doesn't inflate numbers
+    track('view_item', {trip:id, items:[{item_id:id, item_name:TOURS.filter(function(x){ return x.id === id; })[0].name}]});
+  }
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a[href^="https://wa.me/"]');
+    if (!a) return;
+    var trip = a.getAttribute('data-trip');
+    track('generate_lead', trip ? {trip:trip, method:'whatsapp', placement:'tour'} : {method:'whatsapp', placement: a.closest('header') ? 'header' : 'closing'});
+  });
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('.social-links a');
+    if (a) track('social_click', {network: a.querySelector('.net').textContent.toLowerCase()});
+  });
+
+  // ---------- Header turns solid after the hero ----------
+  var bar = document.getElementById('bar');
+  function onScroll(){ bar.classList.toggle('solid', window.scrollY > 40); }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+})();
+</script>
+<script src="/consent.js"></script>
+</body>
+</html>
