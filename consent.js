@@ -11,7 +11,7 @@
   var IDS = {
     ga4: 'G-4MZT5WTLJG',          // Google Analytics 4 measurement ID
     clarity: 'z7j2npclac',        // Microsoft Clarity project ID
-    pixel: 'XXXXXXXXXXXXXXX'      // Meta Pixel ID
+    pixel: '1403960898169404'      // Meta Pixel ID
   };
   var KEY = 'jc-consent';
   var VERSION = 1; // bump when the policy changes to ask everyone again
