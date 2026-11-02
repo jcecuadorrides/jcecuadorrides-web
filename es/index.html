@@ -475,7 +475,8 @@ footer a{color:var(--muted)}
   function activate(id, byUser){
     if (id === activeId && panel.innerHTML) return;
     activeId = id;
-    if (byUser) trackView(id);
+    // desktop hover: count it as a view only if the visitor stays on it for 1 s, so sweeping the mouse over the list doesn't inflate the numbers
+    if (byUser) setTimeout(function(){ if (activeId === id) trackView(id); }, 1000);
     list.querySelectorAll('.dest').forEach(function(el){ el.classList.toggle('active', el.getAttribute('data-id') === id); });
     renderPanel();
   }
