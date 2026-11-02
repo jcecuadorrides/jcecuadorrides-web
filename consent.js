@@ -9,7 +9,7 @@
 */
 (function(){
   var IDS = {
-    ga4: 'G-XXXXXXXXXX',          // Google Analytics 4 measurement ID
+    ga4: 'G-4MZT5WTLJG',          // Google Analytics 4 measurement ID
     clarity: 'xxxxxxxxxx',        // Microsoft Clarity project ID
     pixel: 'XXXXXXXXXXXXXXX'      // Meta Pixel ID
   };
