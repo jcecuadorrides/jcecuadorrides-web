@@ -128,6 +128,37 @@ a{color:inherit}
   @keyframes fadeUp{from{opacity:.25;transform:translateY(6px)}to{opacity:1;transform:none}}
 }
 
+/* Reviews: a featured quote + a rail of "ticket stub" cards (real Google reviews, copied as written) */
+.rev{display:grid;gap:28px}
+@media (min-width:980px){.rev{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:start}.rev>div:first-child{position:sticky;top:110px}}
+.rev-lede{color:var(--muted);font-size:17px;max-width:46ch;margin:-8px 0 28px}
+.rev-feature{position:relative;margin:0;padding:92px 0 0}
+.rev-feature::before{content:"\201C";position:absolute;top:-30px;left:-6px;font-family:var(--f-display);font-weight:900;font-size:180px;line-height:1;color:var(--gold);opacity:.9}
+.rev-feature blockquote{margin:12px 0 0;font-size:clamp(22px,2.6vw,30px);line-height:1.32;font-weight:500;text-wrap:pretty}
+.rev-feature figcaption{margin-top:20px}
+.rev-who{display:flex;align-items:center;gap:12px}
+.rev-av{flex:none;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--gold-soft);border:1px solid var(--gold);color:var(--gold);font-family:var(--f-display);font-weight:800;font-size:18px}
+.rev-name{font-weight:700;display:block;line-height:1.2}
+.rev-meta{font-family:var(--f-mono);font-size:12px;color:var(--muted);letter-spacing:.04em}
+.rev-stars{color:var(--gold);letter-spacing:2px;font-size:14px}
+.rev-cta{margin-top:28px;display:inline-flex;align-items:center;gap:8px;color:var(--gold);font-weight:700;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px}
+.rev-cta:hover{color:var(--gold-hi)}
+.rev-rail{display:grid;grid-auto-flow:column;grid-auto-columns:min(82%,320px);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 16px 18px;margin-inline:-16px;scrollbar-width:thin;scrollbar-color:var(--line) transparent;scroll-padding-inline:16px}
+.rev-hint{font-family:var(--f-mono);font-size:12px;color:var(--muted);margin:4px 0 0}
+@media (min-width:980px){.rev-hint{display:none}}
+@media (min-width:980px){.rev-rail{grid-auto-flow:row;grid-auto-columns:auto;grid-template-columns:1fr 1fr;overflow:visible;padding:0;margin:0}.rev-card:nth-child(even){transform:translateY(28px)}}
+.rev-card{margin:0;scroll-snap-align:start;position:relative;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 18px 16px;display:flex;flex-direction:column;gap:12px}
+/* perforated stub line with notches, like a bus ticket */
+.rev-card::before{content:"";position:absolute;left:14px;right:14px;top:44px;border-top:1px dashed var(--line)}
+.rev-card::after{content:"";position:absolute;top:36px;left:-9px;right:-9px;height:16px;background:radial-gradient(circle at 8px 8px,var(--bg) 7.5px,transparent 8px) left/16px 16px no-repeat,radial-gradient(circle at 8px 8px,var(--bg) 7.5px,transparent 8px) right/16px 16px no-repeat;pointer-events:none}
+.rev-top{display:flex;justify-content:space-between;align-items:center;height:22px}
+.rev-lang{font-family:var(--f-mono);font-size:11px;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:1px 6px}
+.rev-card blockquote{margin:6px 0 0;font-size:16px;line-height:1.5;flex:1}
+@media (prefers-reduced-motion:no-preference){
+  .js-reveal .rev-feature{opacity:0;translate:0 18px;transition:opacity .6s ease,translate .6s ease}
+  @media (min-width:980px){.js-reveal .rev-card{opacity:0;translate:0 18px;transition:opacity .6s ease,translate .6s ease}}
+  .js-reveal .in{opacity:1;translate:0 0}
+}
 /* Sections */
 section.block{padding-block:72px;border-top:1px solid var(--line)}
 section.block h2{font-family:var(--f-display);font-weight:900;font-size:clamp(38px,5.5vw,64px);line-height:.92;text-transform:uppercase;margin:8px 0 24px;text-wrap:balance}
@@ -253,6 +284,35 @@ footer a{color:var(--muted)}
     </div>
   </section>
 
+  <section class="block" id="reviews">
+    <div class="wrap">
+      <div class="eyebrow" data-i18n="rev.eyebrow">Desde el camino</div>
+      <h2 data-i18n="rev.title">Ya viajaron con Juan Carlos</h2>
+      <p class="rev-lede" data-i18n="rev.lede">Opiniones reales de nuestro perfil de Google, tal como las escribieron.</p>
+      <div class="rev">
+        <div>
+          <figure class="rev-feature" lang="es">
+            <span class="rev-stars" role="img" aria-label="5/5">★★★★★</span>
+            <blockquote>Fue increíble! El servicio al cliente es maravilloso, lo hacen sentir a uno seguro y confiado. Las vistas impresionantes. Lo hicimos el último día de nuestro viaje a Ecuador y no pudimos escoger una actividad mejor que esta para despedirnos de este hermoso país 😍✨</blockquote>
+            <figcaption><div class="rev-who"><span class="rev-av" aria-hidden="true">D</span><span><span class="rev-name">Daniela Z.</span><span class="rev-meta">Google</span></span></div></figcaption>
+          </figure>
+          <a class="rev-cta" href="https://www.google.com/maps/search/?api=1&amp;query=JC%20Ecuador%20Rides%20Quito" target="_blank" rel="noopener" data-i18n="rev.cta">Léelas en Google ↗</a>
+        </div>
+        <div class="rev-rail">
+          <figure class="rev-card" lang="en"><div class="rev-top"><span class="rev-stars" role="img" aria-label="5/5">★★★★★</span><span class="rev-lang">EN</span></div><blockquote>Juan was a great service provider. He took care of our rides very professionally and safely. I recommend his services 100%</blockquote><figcaption><div class="rev-who"><span class="rev-av" aria-hidden="true">A</span><span><span class="rev-name">Ana R.</span><span class="rev-meta">Google</span></span></div></figcaption></figure>
+          <figure class="rev-card" lang="es"><div class="rev-top"><span class="rev-stars" role="img" aria-label="5/5">★★★★★</span><span class="rev-lang">ES</span></div><blockquote>Persona puntual, con auto limpio, excelente servicio y muy profesional.</blockquote><figcaption><div class="rev-who"><span class="rev-av" aria-hidden="true">E</span><span><span class="rev-name">Edwin E.</span><span class="rev-meta">Google</span></span></div></figcaption></figure>
+          <figure class="rev-card" lang="es"><div class="rev-top"><span class="rev-stars" role="img" aria-label="5/5">★★★★★</span><span class="rev-lang">ES</span></div><blockquote>Es un buen servicio, ágil, seguro y limpio<br>Lo recomiendo</blockquote><figcaption><div class="rev-who"><span class="rev-av" aria-hidden="true">F</span><span><span class="rev-name">Fabiola I.</span><span class="rev-meta">Google</span></span></div></figcaption></figure>
+          <figure class="rev-card" lang="es"><div class="rev-top"><span class="rev-stars" role="img" aria-label="5/5">★★★★★</span><span class="rev-lang">ES</span></div><blockquote>Tuve una experiencia muy buena con Juan. Es una persona muy amable y responsable. Muchas gracias!</blockquote><figcaption><div class="rev-who"><span class="rev-av" aria-hidden="true">J</span><span><span class="rev-name">Julia W.</span><span class="rev-meta">Google</span></span></div></figcaption></figure>
+          <figure class="rev-card" lang="es"><div class="rev-top"><span class="rev-stars" role="img" aria-label="5/5">★★★★★</span><span class="rev-lang">ES</span></div><blockquote>Gracias por hacerme conocer estos hermosos paisajes y estar en contacto con la naturaleza</blockquote><figcaption><div class="rev-who"><span class="rev-av" aria-hidden="true">J</span><span><span class="rev-name">Jose V.</span><span class="rev-meta">Google</span></span></div></figcaption></figure>
+          <figure class="rev-card" lang="es"><div class="rev-top"><span class="rev-stars" role="img" aria-label="5/5">★★★★★</span><span class="rev-lang">ES</span></div><blockquote>El servicio ha sobrepasado mis expectativas! Totalmente recomendable</blockquote><figcaption><div class="rev-who"><span class="rev-av" aria-hidden="true">X</span><span><span class="rev-name">Ximena Y.</span><span class="rev-meta">Google</span></span></div></figcaption></figure>
+          <figure class="rev-card" lang="es"><div class="rev-top"><span class="rev-stars" role="img" aria-label="5/5">★★★★★</span><span class="rev-lang">ES</span></div><blockquote>Un excelente servicio, la gente es muy amable,y muy servicial, recomiendo para que usen sus servicios.</blockquote><figcaption><div class="rev-who"><span class="rev-av" aria-hidden="true">S</span><span><span class="rev-name">Sonia M.</span><span class="rev-meta">Google</span></span></div></figcaption></figure>
+          <figure class="rev-card" lang="es"><div class="rev-top"><span class="rev-stars" role="img" aria-label="5/5">★★★★★</span><span class="rev-lang">ES</span></div><blockquote>Excelente servicio. Me llevo una muy buena experiencia, 10/10 👍🏻👍🏻</blockquote><figcaption><div class="rev-who"><span class="rev-av" aria-hidden="true">D</span><span><span class="rev-name">Dayana C.</span><span class="rev-meta">Google</span></span></div></figcaption></figure>
+        </div>
+        <p class="rev-hint" aria-hidden="true" data-i18n="rev.hint">Desliza para ver más →</p>
+      </div>
+    </div>
+  </section>
+
   <section class="block" id="how">
     <div class="wrap">
       <div class="eyebrow" data-i18n="how.eyebrow">Cómo funciona</div>
@@ -327,6 +387,9 @@ footer a{color:var(--muted)}
     'ride.title':'Espacio para todos. Y para las maletas.',
     'ride.c1':'SUV DFSK Glory', 'ride.c2':'Caben las maletas', 'ride.c3':'Centro histórico',
     'ride.p1':'Privado, nunca compartido', 'ride.p2':'Hasta 4 pasajeros', 'ride.p3':'Te recogemos en tu hotel',
+    'rev.eyebrow':'Desde el camino', 'rev.title':'Ya viajaron con Juan Carlos',
+    'rev.lede':'Opiniones reales de nuestro perfil de Google, tal como las escribieron.',
+    'rev.cta':'Léelas en Google ↗', 'rev.hint':'Desliza para ver más →',
     'how.eyebrow':'Cómo funciona',
     'how.title':'Reservas en tres mensajes',
     'how.s1t':'Elige tu tour', 'how.s1':'Toca "¡Quiero este tour!" y WhatsApp se abre con todo listo.',
@@ -546,6 +609,18 @@ footer a{color:var(--muted)}
   document.addEventListener('click', function(e){
     var a = e.target.closest && e.target.closest('.social-links a');
     if (a) track('social_click', {network: a.querySelector('.net').textContent.toLowerCase()});
+  });
+
+  // ---------- Reviews: reveal as they scroll in ----------
+  if ('IntersectionObserver' in window){
+    document.documentElement.classList.add('js-reveal');
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if (en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+    }, {threshold:.15});
+    document.querySelectorAll('.rev-card,.rev-feature').forEach(function(el, i){ el.style.transitionDelay = (i % 4) * 70 + 'ms'; io.observe(el); });
+  }
+  document.addEventListener('click', function(e){
+    if (e.target.closest && e.target.closest('.rev-cta')) track('reviews_click', {placement:'reviews'});
   });
 
   // ---------- Header turns solid after the hero ----------
