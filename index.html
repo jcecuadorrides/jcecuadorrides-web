@@ -170,6 +170,7 @@ section.block h2{font-family:var(--f-display);font-weight:900;font-size:clamp(38
 .moments{display:grid;gap:12px;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:28px}
 .moments figure{margin:0}
 .moments img{width:100%;max-width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px;display:block}
+.moments-note{font-size:13px!important;color:var(--muted);margin:12px 0 0!important;font-style:italic}
 .moments figcaption{font-size:13px;color:var(--muted);margin-top:6px}
 @media (max-width:600px){.moments{grid-template-columns:1fr 1fr}.moments figure:last-child{grid-column:1/-1}.moments figure:last-child img{aspect-ratio:16/10}}
 .ride{display:grid;gap:12px;grid-template-columns:1fr}
@@ -230,7 +231,7 @@ footer a{color:var(--muted)}
     <div class="wrap">
       <div class="eyebrow" data-i18n="hero.eyebrow">Private day trips from Quito</div>
       <h1 data-i18n="hero.title">Ecuador, <em>one day at a time.</em></h1>
-      <p data-i18n="hero.lede">Volcanoes, cloud forest, hot springs and crater lakes. All within a day's drive, with your own driver and your own pace.</p>
+      <p data-i18n="hero.lede">Volcanoes, cloud forest, hot springs and crater lakes. Every trip is tailor-made: your dates, your pace, your stops.</p>
     </div>
     <a class="scroll-cue" href="#trips">
       <span data-i18n="hero.cue">Choose your day</span>
@@ -260,13 +261,14 @@ footer a{color:var(--muted)}
       <div>
         <div class="eyebrow" data-i18n="guide.eyebrow">Who picks you up</div>
         <h2 data-i18n="guide.title">Your driver is also your guide</h2>
-        <p data-i18n="guide.p1"><b>Juan Carlos Zurita</b> is a tourism guide by profession. He has led groups at the equator museum and knows these routes by heart.</p>
+        <p data-i18n="guide.p1"><b>Juan Carlos Zurita</b> is Ecuadorian and a tourism guide by profession. He has led groups at the equator museum and knows these routes by heart.</p>
         <p data-i18n="guide.p2">So your trip is more than a ride. You'll know which volcano you're looking at, where locals eat and what time to arrive to beat the crowds.</p>
         <div class="moments">
           <figure><img src="/images/web/cliente-llegada.webp" data-i18n-alt="alt.pickup" alt="Juan Carlos with a traveler next to the SUV after pickup" loading="lazy"><figcaption data-i18n="guide.m1">Pickup done</figcaption></figure>
           <figure><img src="/images/web/cliente-en-el-auto.webp" data-i18n-alt="alt.road" alt="Juan Carlos and a smiling traveler inside the SUV" loading="lazy"><figcaption data-i18n="guide.m2">On the road</figcaption></figure>
           <figure><img src="/images/web/mitad-del-mundo-grupo.webp" data-i18n-alt="alt.group" alt="Juan Carlos guiding a group at the equator line" loading="lazy"><figcaption data-i18n="guide.m3">Guiding at the equator</figcaption></figure>
         </div>
+          <p class="moments-note" data-i18n="guide.mnote">Traveler photos are shared with their permission. We never post yours without asking.</p>
       </div>
     </div>
   </section>
@@ -319,7 +321,7 @@ footer a{color:var(--muted)}
       <h2 data-i18n="how.title">Booked in three messages</h2>
       <ol class="steps">
         <li><b data-i18n="how.s1t">Pick your trip</b><span data-i18n="how.s1">Tap "Let's do it!" and WhatsApp opens with everything ready.</span></li>
-        <li><b data-i18n="how.s2t">Get a fixed price</b><span data-i18n="how.s2">For your whole group, with pickup time and what to pack.</span></li>
+        <li><b data-i18n="how.s2t">Get a fixed price</b><span data-i18n="how.s2">Free and with no commitment. One price for your whole group, with pickup time and what to pack.</span></li>
         <li><b data-i18n="how.s3t">Enjoy the day</b><span data-i18n="how.s3">We pick you up at your hotel. Pay on the day, cash or transfer.</span></li>
       </ol>
     </div>
@@ -339,7 +341,7 @@ footer a{color:var(--muted)}
   <section class="block">
     <div class="wrap close">
       <h2 data-i18n="close.title">Your Ecuador is one message away</h2>
-      <p data-i18n="close.lede">Tell us the date and how many of you are coming. We'll take care of the rest.</p>
+      <p data-i18n="close.lede">Tell us the date and how many of you are coming. We'll send you a free quote, no strings attached.</p>
       <div><a class="btn" data-wa="general" data-i18n="close.cta" href="#" target="_blank" rel="noopener">Let's plan your day!</a></div>
       <div class="contact">+593 99 573 3278 · jcecuadorrides@gmail.com</div>
     </div>
@@ -373,16 +375,16 @@ footer a{color:var(--muted)}
     'nav.cta':'Escríbenos',
     'hero.eyebrow':'Tours privados desde Quito',
     'hero.title':'Ecuador, <em>un día a la vez.</em>',
-    'hero.lede':'Volcanes, bosque nublado, aguas termales y lagunas en cráteres. Todo a un día de camino, con tu propio conductor y a tu ritmo.',
+    'hero.lede':'Volcanes, bosque nublado, aguas termales y lagunas en cráteres. Cada viaje se arma a tu medida: tus fechas, tu ritmo, tus paradas.',
     'hero.cue':'Elige tu día',
     'trips.eyebrow':'9 tours · 1 conductor que conoce el camino',
     'trips.title':'¿Dónde quieres despertar mañana?',
     'trips.lede':'Pasa el cursor por un destino para ver por qué vale el viaje. En el celular, tócalo.',
     'guide.eyebrow':'Quién te recoge',
     'guide.title':'Tu conductor también es tu guía',
-    'guide.p1':'<b>Juan Carlos Zurita</b> es guía de turismo de profesión. Ha guiado grupos en la Mitad del Mundo y se sabe estas rutas de memoria.',
+    'guide.p1':'<b>Juan Carlos Zurita</b> es ecuatoriano y guía de turismo de profesión. Ha guiado grupos en la Mitad del Mundo y se sabe estas rutas de memoria.',
     'guide.p2':'Por eso tu viaje es mucho más que un traslado: vas a saber qué volcán estás viendo, dónde come la gente de aquí y a qué hora llegar para evitar las multitudes.',
-    'guide.m1':'Recogida lista', 'guide.m2':'En el camino', 'guide.m3':'Guiando en la Mitad del Mundo',
+    'guide.mnote':'Las fotos de viajeros se publican con su permiso. Nunca subimos las tuyas sin preguntarte.', 'guide.m1':'Recogida lista', 'guide.m2':'En el camino', 'guide.m3':'Guiando en la Mitad del Mundo',
     'ride.eyebrow':'Tu vehículo',
     'ride.title':'Espacio para todos. Y para las maletas.',
     'ride.c1':'SUV DFSK Glory', 'ride.c2':'Caben las maletas', 'ride.c3':'Centro histórico',
@@ -393,7 +395,7 @@ footer a{color:var(--muted)}
     'how.eyebrow':'Cómo funciona',
     'how.title':'Reservas en tres mensajes',
     'how.s1t':'Elige tu tour', 'how.s1':'Toca "¡Quiero este tour!" y WhatsApp se abre con todo listo.',
-    'how.s2t':'Recibe un precio fijo', 'how.s2':'Para todo tu grupo, con hora de recogida y qué llevar.',
+    'how.s2t':'Recibe un precio fijo', 'how.s2':'Gratis y sin compromiso. Un solo precio para todo tu grupo, con hora de recogida y qué llevar.',
     'how.s3t':'Disfruta el día', 'how.s3':'Te recogemos en tu hotel. Pagas el mismo día, en efectivo o por transferencia.',
     'faq.eyebrow':'Bueno saber',
     'faq.title':'Antes de ir',
@@ -402,7 +404,7 @@ footer a{color:var(--muted)}
     'faq.q3':'¿Las entradas están incluidas?', 'faq.a3':'Las entradas, las termas y los teleféricos se pagan en el lugar, así solo pagas lo que eliges hacer. Te decimos los precios antes de ir.',
     'faq.q4':'¿Cómo pago?', 'faq.a4':'El mismo día, en efectivo (USD) o por transferencia. ¿Prefieres tarjeta o PayPal? Te enviamos un enlace de pago seguro.',
     'close.title':'Tu Ecuador está a un mensaje',
-    'close.lede':'Cuéntanos la fecha y cuántos son. Del resto nos encargamos nosotros.',
+    'close.lede':'Cuéntanos la fecha y cuántos son. Te enviamos una cotización gratis y sin compromiso.',
     'close.cta':'¡Armemos tu día!',
     'social.eyebrow':'Sigue los viajes',
     'social.title':'Mira a dónde fuimos esta semana',
@@ -455,8 +457,8 @@ footer a{color:var(--muted)}
      hook:{en:'Wool, colors and friendly bargaining in the Andes\' most famous market, with a sacred waterfall on the way home.',
            es:'Lana, colores y regateo amable en el mercado más famoso de los Andes, con una cascada sagrada de regreso.'}},
     {id:'cotopaxi', g:'full', name:'Cotopaxi', drive:'2 h', time:'9–10 h', alt:3800,
-     hook:{en:'Walk at the foot of a perfect snow-capped cone, one of the highest active volcanoes on Earth. Wild horses included.',
-           es:'Camina al pie de un cono nevado perfecto, uno de los volcanes activos más altos del mundo. Caballos salvajes incluidos.'}},
+     hook:{en:'Walk at the foot of a perfect snow-capped cone, one of the highest active volcanoes on Earth. With luck you’ll spot wild horses grazing the páramo (for watching, not riding).',
+           es:'Camina al pie de un cono nevado perfecto, uno de los volcanes activos más altos del mundo. Con suerte verás caballos salvajes en el páramo (se miran, no se montan).'}},
     {id:'quilotoa', g:'long', name:'Quilotoa', drive:'3 h 30', time:'11–12 h', alt:3900,
      hook:{en:'Stand on the rim of a volcano and look down at a lake so turquoise it looks edited. It isn\'t.',
            es:'Párate en el borde de un volcán y mira una laguna tan turquesa que parece editada. No lo está.'}},
