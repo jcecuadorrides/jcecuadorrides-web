@@ -3,13 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>JC Ecuador Rides · Private day trips from Quito</title>
 <meta name="description" content="Private day trips from Quito with a local tourism guide: Cotopaxi, Quilotoa, Mindo, Otavalo, Baños, Papallacta and more. Hotel pickup, plan it on WhatsApp.">
 <meta name="theme-color" content="#111110">
 <link rel="canonical" href="https://jcecuadorrides.com/">
-<link rel="alternate" hreflang="en" href="https://jcecuadorrides.com/">
-<link rel="alternate" hreflang="es" href="https://jcecuadorrides.com/es/">
-<link rel="alternate" hreflang="x-default" href="https://jcecuadorrides.com/">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32.png">
 <link rel="apple-touch-icon" href="/images/icons/apple-touch-icon.png">
@@ -24,7 +20,8 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="es_EC">
 <meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "JC Ecuador Rides", "url": "https://jcecuadorrides.com/", "image": "https://jcecuadorrides.com/images/og-image.jpg", "logo": "https://jcecuadorrides.com/images/icons/icon-512.png", "description": "Private day trips from Quito with a local tourism guide: Cotopaxi, Quilotoa, Mindo, Otavalo, Baños, Papallacta and more. Hotel pickup, plan it on WhatsApp.", "telephone": "+593995733278", "areaServed": {"@type": "City", "name": "Quito"}, "inLanguage": "en", "address": {"@type": "PostalAddress", "addressLocality": "Quito", "addressCountry": "EC"}, "sameAs": ["https://www.instagram.com/jcecuadorrides/", "https://www.facebook.com/people/JC-Ecuador-Rides/61593376521536/"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "JC Ecuador Rides", "url": "https://jcecuadorrides.com/", "image": "https://jcecuadorrides.com/images/og-image.jpg", "logo": "https://jcecuadorrides.com/images/icons/icon-512.png", "description": "Private day trips from Quito with a local tourism guide: Cotopaxi, Quilotoa, Mindo, Otavalo, Baños, Papallacta and more. Hotel pickup, plan it on WhatsApp.", "telephone": "+593995733278", "areaServed": {"@type": "City", "name": "Quito"}, "address": {"@type": "PostalAddress", "addressLocality": "Quito", "addressCountry": "EC"}, "sameAs": ["https://www.instagram.com/jcecuadorrides/", "https://www.facebook.com/people/JC-Ecuador-Rides/61593376521536/"]}</script>
+<title>JC Ecuador Rides · Private day trips from Quito</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -60,9 +57,9 @@ a{color:inherit}
 .bar-right{display:flex;align-items:center;gap:12px}
 .bar .btn{padding:9px 14px;font-size:14px}
 .lang{display:flex;align-items:center;border:1px solid var(--line);border-radius:999px;padding:3px;background:rgba(17,17,16,.6)}
-.lang a,.lang button{all:unset;cursor:pointer;font-family:var(--f-mono);font-size:13px;font-weight:500;padding:5px 10px;border-radius:999px;color:var(--muted)}
-.lang a[aria-current="page"],.lang button[aria-pressed="true"]{background:var(--gold);color:var(--gold-ink)}
-.lang a:focus-visible,.lang button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.lang button{all:unset;cursor:pointer;font-family:var(--f-mono);font-size:13px;font-weight:500;padding:5px 10px;border-radius:999px;color:var(--muted)}
+.lang button[aria-pressed="true"]{background:var(--gold);color:var(--gold-ink)}
+.lang button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .lang span{color:var(--line);font-size:12px}
 
 /* Hero */
@@ -128,37 +125,6 @@ a{color:inherit}
   @keyframes fadeUp{from{opacity:.25;transform:translateY(6px)}to{opacity:1;transform:none}}
 }
 
-/* Reviews: a featured quote + a rail of "ticket stub" cards (real Google reviews, copied as written) */
-.rev{display:grid;gap:28px}
-@media (min-width:980px){.rev{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;align-items:start}.rev>div:first-child{position:sticky;top:110px}}
-.rev-lede{color:var(--muted);font-size:17px;max-width:46ch;margin:-8px 0 28px}
-.rev-feature{position:relative;margin:0;padding:92px 0 0}
-.rev-feature::before{content:"\201C";position:absolute;top:-30px;left:-6px;font-family:var(--f-display);font-weight:900;font-size:180px;line-height:1;color:var(--gold);opacity:.9}
-.rev-feature blockquote{margin:12px 0 0;font-size:clamp(22px,2.6vw,30px);line-height:1.32;font-weight:500;text-wrap:pretty}
-.rev-feature figcaption{margin-top:20px}
-.rev-who{display:flex;align-items:center;gap:12px}
-.rev-av{flex:none;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--gold-soft);border:1px solid var(--gold);color:var(--gold);font-family:var(--f-display);font-weight:800;font-size:18px}
-.rev-name{font-weight:700;display:block;line-height:1.2}
-.rev-meta{font-family:var(--f-mono);font-size:12px;color:var(--muted);letter-spacing:.04em}
-.rev-stars{color:var(--gold);letter-spacing:2px;font-size:14px}
-.rev-cta{margin-top:28px;display:inline-flex;align-items:center;gap:8px;color:var(--gold);font-weight:700;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px}
-.rev-cta:hover{color:var(--gold-hi)}
-.rev-rail{display:grid;grid-auto-flow:column;grid-auto-columns:min(82%,320px);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 16px 18px;margin-inline:-16px;scrollbar-width:thin;scrollbar-color:var(--line) transparent;scroll-padding-inline:16px}
-.rev-hint{font-family:var(--f-mono);font-size:12px;color:var(--muted);margin:4px 0 0}
-@media (min-width:980px){.rev-hint{display:none}}
-@media (min-width:980px){.rev-rail{grid-auto-flow:row;grid-auto-columns:auto;grid-template-columns:1fr 1fr;overflow:visible;padding:0;margin:0}.rev-card:nth-child(even){transform:translateY(28px)}}
-.rev-card{margin:0;scroll-snap-align:start;position:relative;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 18px 16px;display:flex;flex-direction:column;gap:12px}
-/* perforated stub line with notches, like a bus ticket */
-.rev-card::before{content:"";position:absolute;left:14px;right:14px;top:44px;border-top:1px dashed var(--line)}
-.rev-card::after{content:"";position:absolute;top:36px;left:-9px;right:-9px;height:16px;background:radial-gradient(circle at 8px 8px,var(--bg) 7.5px,transparent 8px) left/16px 16px no-repeat,radial-gradient(circle at 8px 8px,var(--bg) 7.5px,transparent 8px) right/16px 16px no-repeat;pointer-events:none}
-.rev-top{display:flex;justify-content:space-between;align-items:center;height:22px}
-.rev-lang{font-family:var(--f-mono);font-size:11px;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:1px 6px}
-.rev-card blockquote{margin:6px 0 0;font-size:16px;line-height:1.5;flex:1}
-@media (prefers-reduced-motion:no-preference){
-  .js-reveal .rev-feature{opacity:0;translate:0 18px;transition:opacity .6s ease,translate .6s ease}
-  @media (min-width:980px){.js-reveal .rev-card{opacity:0;translate:0 18px;transition:opacity .6s ease,translate .6s ease}}
-  .js-reveal .in{opacity:1;translate:0 0}
-}
 /* Sections */
 section.block{padding-block:72px;border-top:1px solid var(--line)}
 section.block h2{font-family:var(--f-display);font-weight:900;font-size:clamp(38px,5.5vw,64px);line-height:.92;text-transform:uppercase;margin:8px 0 24px;text-wrap:balance}
@@ -170,7 +136,6 @@ section.block h2{font-family:var(--f-display);font-weight:900;font-size:clamp(38
 .moments{display:grid;gap:12px;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:28px}
 .moments figure{margin:0}
 .moments img{width:100%;max-width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px;display:block}
-.moments-note{font-size:13px!important;color:var(--muted);margin:12px 0 0!important;font-style:italic}
 .moments figcaption{font-size:13px;color:var(--muted);margin-top:6px}
 @media (max-width:600px){.moments{grid-template-columns:1fr 1fr}.moments figure:last-child{grid-column:1/-1}.moments figure:last-child img{aspect-ratio:16/10}}
 .ride{display:grid;gap:12px;grid-template-columns:1fr}
@@ -215,9 +180,9 @@ footer a{color:var(--muted)}
     <a class="logo" href="#top"><b>JC</b><span>Ecuador Rides</span></a>
     <div class="bar-right">
       <div class="lang" role="group" aria-label="Language / Idioma">
-        <a href="/" hreflang="en" lang="en" aria-label="English" aria-current="page">EN</a>
+        <button type="button" data-lang="en" aria-pressed="true" aria-label="English">EN</button>
         <span aria-hidden="true">|</span>
-        <a href="/es/" hreflang="es" lang="es" aria-label="Español">ES</a>
+        <button type="button" data-lang="es" aria-pressed="false" aria-label="Español">ES</button>
       </div>
       <a class="btn" data-wa="general" data-i18n="nav.cta" href="#" target="_blank" rel="noopener">WhatsApp us</a>
     </div>
@@ -226,12 +191,12 @@ footer a{color:var(--muted)}
 
 <main id="top">
   <section class="hero">
-    <img class="hero-img" src="/images/web/hero-suv-puembo.webp" alt="" aria-hidden="true">
+    <img class="hero-img" src="images/web/hero-suv-puembo.webp" alt="" aria-hidden="true">
     <div class="hero-shade" aria-hidden="true"></div>
     <div class="wrap">
       <div class="eyebrow" data-i18n="hero.eyebrow">Private day trips from Quito</div>
       <h1 data-i18n="hero.title">Ecuador, <em>one day at a time.</em></h1>
-      <p data-i18n="hero.lede">Volcanoes, cloud forest, hot springs and crater lakes. Every trip is tailor-made: your dates, your pace, your stops.</p>
+      <p data-i18n="hero.lede">Volcanoes, cloud forest, hot springs and crater lakes. All within a day's drive, with your own driver and your own pace.</p>
     </div>
     <a class="scroll-cue" href="#trips">
       <span data-i18n="hero.cue">Choose your day</span>
@@ -257,18 +222,17 @@ footer a{color:var(--muted)}
 
   <section class="block" id="guide">
     <div class="wrap guide">
-      <img class="portrait-img" src="/images/web/juan-carlos-retrato.webp" data-i18n-alt="alt.portrait" alt="Juan Carlos Zurita smiling in a park in Quito" loading="lazy">
+      <img class="portrait-img" src="images/web/juan-carlos-retrato.webp" data-i18n-alt="alt.portrait" alt="Juan Carlos Zurita smiling in a park in Quito" loading="lazy">
       <div>
         <div class="eyebrow" data-i18n="guide.eyebrow">Who picks you up</div>
         <h2 data-i18n="guide.title">Your driver is also your guide</h2>
-        <p data-i18n="guide.p1"><b>Juan Carlos Zurita</b> is Ecuadorian and a tourism guide by profession. He has led groups at the equator museum and knows these routes by heart.</p>
+        <p data-i18n="guide.p1"><b>Juan Carlos Zurita</b> is a tourism guide by profession. He has led groups at the equator museum and knows these routes by heart.</p>
         <p data-i18n="guide.p2">So your trip is more than a ride. You'll know which volcano you're looking at, where locals eat and what time to arrive to beat the crowds.</p>
         <div class="moments">
-          <figure><img src="/images/web/cliente-llegada.webp" data-i18n-alt="alt.pickup" alt="Juan Carlos with a traveler next to the SUV after pickup" loading="lazy"><figcaption data-i18n="guide.m1">Pickup done</figcaption></figure>
-          <figure><img src="/images/web/cliente-en-el-auto.webp" data-i18n-alt="alt.road" alt="Juan Carlos and a smiling traveler inside the SUV" loading="lazy"><figcaption data-i18n="guide.m2">On the road</figcaption></figure>
-          <figure><img src="/images/web/mitad-del-mundo-grupo.webp" data-i18n-alt="alt.group" alt="Juan Carlos guiding a group at the equator line" loading="lazy"><figcaption data-i18n="guide.m3">Guiding at the equator</figcaption></figure>
+          <figure><img src="images/web/cliente-llegada.webp" data-i18n-alt="alt.pickup" alt="Juan Carlos with a traveler next to the SUV after pickup" loading="lazy"><figcaption data-i18n="guide.m1">Pickup done</figcaption></figure>
+          <figure><img src="images/web/cliente-en-el-auto.webp" data-i18n-alt="alt.road" alt="Juan Carlos and a smiling traveler inside the SUV" loading="lazy"><figcaption data-i18n="guide.m2">On the road</figcaption></figure>
+          <figure><img src="images/web/mitad-del-mundo-grupo.webp" data-i18n-alt="alt.group" alt="Juan Carlos guiding a group at the equator line" loading="lazy"><figcaption data-i18n="guide.m3">Guiding at the equator</figcaption></figure>
         </div>
-          <p class="moments-note" data-i18n="guide.mnote">Traveler photos are shared with their permission. We never post yours without asking.</p>
       </div>
     </div>
   </section>
@@ -278,40 +242,11 @@ footer a{color:var(--muted)}
       <div class="eyebrow" data-i18n="ride.eyebrow">Your ride</div>
       <h2 data-i18n="ride.title">Room for everyone. And the suitcases.</h2>
       <div class="ride">
-        <figure><img src="/images/web/suv-lateral.webp" data-i18n-alt="alt.suv" alt="Black DFSK Glory SUV" loading="lazy"><figcaption data-i18n="ride.c1">DFSK Glory SUV</figcaption></figure>
-        <figure><img src="/images/web/suv-maletero.webp" data-i18n-alt="alt.trunk" alt="SUV trunk loaded with four suitcases" loading="lazy"><figcaption data-i18n="ride.c2">Luggage fits</figcaption></figure>
-        <figure><img src="/images/web/suv-basilica.webp" data-i18n-alt="alt.basilica" alt="The SUV parked in front of the Basílica in Quito" loading="lazy"><figcaption data-i18n="ride.c3">Historic center</figcaption></figure>
+        <figure><img src="images/web/suv-lateral.webp" data-i18n-alt="alt.suv" alt="Black DFSK Glory SUV" loading="lazy"><figcaption data-i18n="ride.c1">DFSK Glory SUV</figcaption></figure>
+        <figure><img src="images/web/suv-maletero.webp" data-i18n-alt="alt.trunk" alt="SUV trunk loaded with four suitcases" loading="lazy"><figcaption data-i18n="ride.c2">Luggage fits</figcaption></figure>
+        <figure><img src="images/web/suv-basilica.webp" data-i18n-alt="alt.basilica" alt="The SUV parked in front of the Basílica in Quito" loading="lazy"><figcaption data-i18n="ride.c3">Historic center</figcaption></figure>
       </div>
       <ul class="ride-points"><li data-i18n="ride.p1">Private, never shared</li><li data-i18n="ride.p2">Up to 4 passengers</li><li data-i18n="ride.p3">Pickup at your hotel</li></ul>
-    </div>
-  </section>
-
-  <section class="block" id="reviews">
-    <div class="wrap">
-      <div class="eyebrow" data-i18n="rev.eyebrow">From the road</div>
-      <h2 data-i18n="rev.title">They already rode with Juan Carlos</h2>
-      <p class="rev-lede" data-i18n="rev.lede">Real reviews from our Google profile, shown as written. Most of our travelers so far write in Spanish.</p>
-      <div class="rev">
-        <div>
-          <figure class="rev-feature" lang="es">
-            <span class="rev-stars" role="img" aria-label="5/5">★★★★★</span>
-            <blockquote>Fue increíble! El servicio al cliente es maravilloso, lo hacen sentir a uno seguro y confiado. Las vistas impresionantes. Lo hicimos el último día de nuestro viaje a Ecuador y no pudimos escoger una actividad mejor que esta para despedirnos de este hermoso país 😍✨</blockquote>
-            <figcaption><div class="rev-who"><span class="rev-av" aria-hidden="true">D</span><span><span class="rev-name">Daniela Z.</span><span class="rev-meta">Google</span></span></div></figcaption>
-          </figure>
-          <a class="rev-cta" href="https://share.google/Larza0KcBZcgp7a9W" target="_blank" rel="noopener" data-i18n="rev.cta">Read them on Google ↗</a>
-        </div>
-        <div class="rev-rail">
-          <figure class="rev-card" lang="en"><div class="rev-top"><span class="rev-stars" role="img" aria-label="5/5">★★★★★</span><span class="rev-lang">EN</span></div><blockquote>Juan was a great service provider. He took care of our rides very professionally and safely. I recommend his services 100%</blockquote><figcaption><div class="rev-who"><span class="rev-av" aria-hidden="true">A</span><span><span class="rev-name">Ana R.</span><span class="rev-meta">Google</span></span></div></figcaption></figure>
-          <figure class="rev-card" lang="es"><div class="rev-top"><span class="rev-stars" role="img" aria-label="5/5">★★★★★</span><span class="rev-lang">ES</span></div><blockquote>Persona puntual, con auto limpio, excelente servicio y muy profesional.</blockquote><figcaption><div class="rev-who"><span class="rev-av" aria-hidden="true">E</span><span><span class="rev-name">Edwin E.</span><span class="rev-meta">Google</span></span></div></figcaption></figure>
-          <figure class="rev-card" lang="es"><div class="rev-top"><span class="rev-stars" role="img" aria-label="5/5">★★★★★</span><span class="rev-lang">ES</span></div><blockquote>Es un buen servicio, ágil, seguro y limpio<br>Lo recomiendo</blockquote><figcaption><div class="rev-who"><span class="rev-av" aria-hidden="true">F</span><span><span class="rev-name">Fabiola I.</span><span class="rev-meta">Google</span></span></div></figcaption></figure>
-          <figure class="rev-card" lang="es"><div class="rev-top"><span class="rev-stars" role="img" aria-label="5/5">★★★★★</span><span class="rev-lang">ES</span></div><blockquote>Tuve una experiencia muy buena con Juan. Es una persona muy amable y responsable. Muchas gracias!</blockquote><figcaption><div class="rev-who"><span class="rev-av" aria-hidden="true">J</span><span><span class="rev-name">Julia W.</span><span class="rev-meta">Google</span></span></div></figcaption></figure>
-          <figure class="rev-card" lang="es"><div class="rev-top"><span class="rev-stars" role="img" aria-label="5/5">★★★★★</span><span class="rev-lang">ES</span></div><blockquote>Gracias por hacerme conocer estos hermosos paisajes y estar en contacto con la naturaleza</blockquote><figcaption><div class="rev-who"><span class="rev-av" aria-hidden="true">J</span><span><span class="rev-name">Jose V.</span><span class="rev-meta">Google</span></span></div></figcaption></figure>
-          <figure class="rev-card" lang="es"><div class="rev-top"><span class="rev-stars" role="img" aria-label="5/5">★★★★★</span><span class="rev-lang">ES</span></div><blockquote>El servicio ha sobrepasado mis expectativas! Totalmente recomendable</blockquote><figcaption><div class="rev-who"><span class="rev-av" aria-hidden="true">X</span><span><span class="rev-name">Ximena Y.</span><span class="rev-meta">Google</span></span></div></figcaption></figure>
-          <figure class="rev-card" lang="es"><div class="rev-top"><span class="rev-stars" role="img" aria-label="5/5">★★★★★</span><span class="rev-lang">ES</span></div><blockquote>Un excelente servicio, la gente es muy amable,y muy servicial, recomiendo para que usen sus servicios.</blockquote><figcaption><div class="rev-who"><span class="rev-av" aria-hidden="true">S</span><span><span class="rev-name">Sonia M.</span><span class="rev-meta">Google</span></span></div></figcaption></figure>
-          <figure class="rev-card" lang="es"><div class="rev-top"><span class="rev-stars" role="img" aria-label="5/5">★★★★★</span><span class="rev-lang">ES</span></div><blockquote>Excelente servicio. Me llevo una muy buena experiencia, 10/10 👍🏻👍🏻</blockquote><figcaption><div class="rev-who"><span class="rev-av" aria-hidden="true">D</span><span><span class="rev-name">Dayana C.</span><span class="rev-meta">Google</span></span></div></figcaption></figure>
-        </div>
-        <p class="rev-hint" aria-hidden="true" data-i18n="rev.hint">Swipe for more →</p>
-      </div>
     </div>
   </section>
 
@@ -321,7 +256,7 @@ footer a{color:var(--muted)}
       <h2 data-i18n="how.title">Booked in three messages</h2>
       <ol class="steps">
         <li><b data-i18n="how.s1t">Pick your trip</b><span data-i18n="how.s1">Tap "Let's do it!" and WhatsApp opens with everything ready.</span></li>
-        <li><b data-i18n="how.s2t">Get a fixed price</b><span data-i18n="how.s2">Free and with no commitment. One price for your whole group, with pickup time and what to pack.</span></li>
+        <li><b data-i18n="how.s2t">Get a fixed price</b><span data-i18n="how.s2">For your whole group, with pickup time and what to pack.</span></li>
         <li><b data-i18n="how.s3t">Enjoy the day</b><span data-i18n="how.s3">We pick you up at your hotel. Pay on the day, cash or transfer.</span></li>
       </ol>
     </div>
@@ -341,7 +276,7 @@ footer a{color:var(--muted)}
   <section class="block">
     <div class="wrap close">
       <h2 data-i18n="close.title">Your Ecuador is one message away</h2>
-      <p data-i18n="close.lede">Tell us the date and how many of you are coming. We'll send you a free quote, no strings attached.</p>
+      <p data-i18n="close.lede">Tell us the date and how many of you are coming. We'll take care of the rest.</p>
       <div><a class="btn" data-wa="general" data-i18n="close.cta" href="#" target="_blank" rel="noopener">Let's plan your day!</a></div>
       <div class="contact">+593 99 573 3278 · jcecuadorrides@gmail.com</div>
     </div>
@@ -362,7 +297,7 @@ footer a{color:var(--muted)}
 <footer>
   <div class="wrap">
     <span>JC Ecuador Rides · Quito, Ecuador</span>
-    <span><a href="/privacy.html" data-i18n="foot.privacy">Privacy policy</a> · <a href="#" data-consent-open data-i18n="foot.cookies">Cookie preferences</a></span>
+    <span><a href="privacy.html" data-i18n="foot.privacy">Privacy policy</a> · <a href="#" data-consent-open data-i18n="foot.cookies">Cookie preferences</a></span>
   </div>
 </footer>
 
@@ -375,27 +310,24 @@ footer a{color:var(--muted)}
     'nav.cta':'Escríbenos',
     'hero.eyebrow':'Tours privados desde Quito',
     'hero.title':'Ecuador, <em>un día a la vez.</em>',
-    'hero.lede':'Volcanes, bosque nublado, aguas termales y lagunas en cráteres. Cada viaje se arma a tu medida: tus fechas, tu ritmo, tus paradas.',
+    'hero.lede':'Volcanes, bosque nublado, aguas termales y lagunas en cráteres. Todo a un día de camino, con tu propio conductor y a tu ritmo.',
     'hero.cue':'Elige tu día',
     'trips.eyebrow':'9 tours · 1 conductor que conoce el camino',
     'trips.title':'¿Dónde quieres despertar mañana?',
     'trips.lede':'Pasa el cursor por un destino para ver por qué vale el viaje. En el celular, tócalo.',
     'guide.eyebrow':'Quién te recoge',
     'guide.title':'Tu conductor también es tu guía',
-    'guide.p1':'<b>Juan Carlos Zurita</b> es ecuatoriano y guía de turismo de profesión. Ha guiado grupos en la Mitad del Mundo y se sabe estas rutas de memoria.',
+    'guide.p1':'<b>Juan Carlos Zurita</b> es guía de turismo de profesión. Ha guiado grupos en la Mitad del Mundo y se sabe estas rutas de memoria.',
     'guide.p2':'Por eso tu viaje es mucho más que un traslado: vas a saber qué volcán estás viendo, dónde come la gente de aquí y a qué hora llegar para evitar las multitudes.',
-    'guide.mnote':'Las fotos de viajeros se publican con su permiso. Nunca subimos las tuyas sin preguntarte.', 'guide.m1':'Recogida lista', 'guide.m2':'En el camino', 'guide.m3':'Guiando en la Mitad del Mundo',
+    'guide.m1':'Recogida lista', 'guide.m2':'En el camino', 'guide.m3':'Guiando en la Mitad del Mundo',
     'ride.eyebrow':'Tu vehículo',
     'ride.title':'Espacio para todos. Y para las maletas.',
     'ride.c1':'SUV DFSK Glory', 'ride.c2':'Caben las maletas', 'ride.c3':'Centro histórico',
     'ride.p1':'Privado, nunca compartido', 'ride.p2':'Hasta 4 pasajeros', 'ride.p3':'Te recogemos en tu hotel',
-    'rev.eyebrow':'Desde el camino', 'rev.title':'Ya viajaron con Juan Carlos',
-    'rev.lede':'Opiniones reales de nuestro perfil de Google, tal como las escribieron.',
-    'rev.cta':'Léelas en Google ↗', 'rev.hint':'Desliza para ver más →',
     'how.eyebrow':'Cómo funciona',
     'how.title':'Reservas en tres mensajes',
     'how.s1t':'Elige tu tour', 'how.s1':'Toca "¡Quiero este tour!" y WhatsApp se abre con todo listo.',
-    'how.s2t':'Recibe un precio fijo', 'how.s2':'Gratis y sin compromiso. Un solo precio para todo tu grupo, con hora de recogida y qué llevar.',
+    'how.s2t':'Recibe un precio fijo', 'how.s2':'Para todo tu grupo, con hora de recogida y qué llevar.',
     'how.s3t':'Disfruta el día', 'how.s3':'Te recogemos en tu hotel. Pagas el mismo día, en efectivo o por transferencia.',
     'faq.eyebrow':'Bueno saber',
     'faq.title':'Antes de ir',
@@ -404,7 +336,7 @@ footer a{color:var(--muted)}
     'faq.q3':'¿Las entradas están incluidas?', 'faq.a3':'Las entradas, las termas y los teleféricos se pagan en el lugar, así solo pagas lo que eliges hacer. Te decimos los precios antes de ir.',
     'faq.q4':'¿Cómo pago?', 'faq.a4':'El mismo día, en efectivo (USD) o por transferencia. ¿Prefieres tarjeta o PayPal? Te enviamos un enlace de pago seguro.',
     'close.title':'Tu Ecuador está a un mensaje',
-    'close.lede':'Cuéntanos la fecha y cuántos son. Te enviamos una cotización gratis y sin compromiso.',
+    'close.lede':'Cuéntanos la fecha y cuántos son. Del resto nos encargamos nosotros.',
     'close.cta':'¡Armemos tu día!',
     'social.eyebrow':'Sigue los viajes',
     'social.title':'Mira a dónde fuimos esta semana',
@@ -435,7 +367,7 @@ footer a{color:var(--muted)}
 
   var TOURS = [
     {id:'panecillo', g:'half', name:'El Panecillo', drive:'20 min', time:'3 h', alt:3000,
-     photo:'/images/web/panecillo-juan-carlos.webp',
+     photo:'images/web/panecillo-juan-carlos.webp',
      photoAlt:{en:'Juan Carlos in front of the Virgin of El Panecillo', es:'Juan Carlos frente a la Virgen del Panecillo'},
      hook:{en:'The whole colonial city at your feet, watched over by a winged Virgin. From up here, Quito finally makes sense.',
            es:'Toda la ciudad colonial a tus pies, bajo la mirada de una Virgen con alas. Desde aquí arriba, Quito por fin tiene sentido.'}},
@@ -443,7 +375,7 @@ footer a{color:var(--muted)}
      hook:{en:'One cable car ride and Quito is a thousand meters below your feet. On a clear morning, Cotopaxi says hello.',
            es:'Un viaje en teleférico y Quito queda mil metros bajo tus pies. En una mañana despejada, el Cotopaxi te saluda.'}},
     {id:'mitad', g:'half', name:'Mitad del Mundo', drive:'50 min', time:'4–5 h', alt:2480,
-     photo:'/images/web/mitad-del-mundo-juan-carlos-guia.webp',
+     photo:'images/web/mitad-del-mundo-juan-carlos-guia.webp',
      photoAlt:{en:'Juan Carlos guiding travelers at the equator museum', es:'Juan Carlos guiando a viajeros en el museo de la línea ecuatorial'},
      hook:{en:'One foot in the north, one in the south. Take the photo everyone wants, then find out why the famous line is in the wrong place.',
            es:'Un pie en el norte y otro en el sur. Tómate la foto que todos quieren y descubre por qué la línea famosa está en el lugar equivocado.'}},
@@ -457,8 +389,8 @@ footer a{color:var(--muted)}
      hook:{en:'Wool, colors and friendly bargaining in the Andes\' most famous market, with a sacred waterfall on the way home.',
            es:'Lana, colores y regateo amable en el mercado más famoso de los Andes, con una cascada sagrada de regreso.'}},
     {id:'cotopaxi', g:'full', name:'Cotopaxi', drive:'2 h', time:'9–10 h', alt:3800,
-     hook:{en:'Walk at the foot of a perfect snow-capped cone, one of the highest active volcanoes on Earth. With luck you’ll spot wild horses grazing the páramo (for watching, not riding).',
-           es:'Camina al pie de un cono nevado perfecto, uno de los volcanes activos más altos del mundo. Con suerte verás caballos salvajes en el páramo (se miran, no se montan).'}},
+     hook:{en:'Walk at the foot of a perfect snow-capped cone, one of the highest active volcanoes on Earth. Wild horses included.',
+           es:'Camina al pie de un cono nevado perfecto, uno de los volcanes activos más altos del mundo. Caballos salvajes incluidos.'}},
     {id:'quilotoa', g:'long', name:'Quilotoa', drive:'3 h 30', time:'11–12 h', alt:3900,
      hook:{en:'Stand on the rim of a volcano and look down at a lake so turquoise it looks edited. It isn\'t.',
            es:'Párate en el borde de un volcán y mira una laguna tan turquesa que parece editada. No lo está.'}},
@@ -468,7 +400,7 @@ footer a{color:var(--muted)}
   ];
   var GROUP_ORDER = ['half','full','long'];
 
-  var lang = document.documentElement.lang === 'es' ? 'es' : 'en', activeId = 'cotopaxi';
+  var lang = 'en', activeId = 'cotopaxi';
   function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
   function t(){ return UI[lang]; }
   function fmtAlt(a){ return a.toLocaleString(t().locale); }
@@ -540,8 +472,7 @@ footer a{color:var(--muted)}
   function activate(id, byUser){
     if (id === activeId && panel.innerHTML) return;
     activeId = id;
-    // desktop hover: count it as a view only if the visitor stays on it for 1 s, so sweeping the mouse over the list doesn't inflate the numbers
-    if (byUser) setTimeout(function(){ if (activeId === id) trackView(id); }, 1000);
+    if (byUser) trackView(id);
     list.querySelectorAll('.dest').forEach(function(el){ el.classList.toggle('active', el.getAttribute('data-id') === id); });
     renderPanel();
   }
@@ -576,8 +507,10 @@ footer a{color:var(--muted)}
     try { localStorage.setItem('jc-lang', l); } catch(e){}
     document.dispatchEvent(new Event('jc:lang'));
   }
-  document.querySelectorAll('.lang a').forEach(function(a){ a.addEventListener('click', function(){ var l = a.getAttribute('hreflang'); if (l !== lang) track('language_switch', {language:l}); }); });
-  setLang(lang);
+  document.querySelectorAll('.lang button').forEach(function(b){ b.addEventListener('click', function(){ var l = b.getAttribute('data-lang'); if (l !== lang){ setLang(l); track('language_switch', {language:l}); } }); });
+  var start = 'en';
+  try { start = localStorage.getItem('jc-lang') || ((navigator.language || '').toLowerCase().indexOf('es') === 0 ? 'es' : 'en'); } catch(e){}
+  setLang(start);
 
   // ---------- Measurement ----------
   // Sends events only to the tools the visitor accepted in the cookie banner (see consent.js).
@@ -613,24 +546,12 @@ footer a{color:var(--muted)}
     if (a) track('social_click', {network: a.querySelector('.net').textContent.toLowerCase()});
   });
 
-  // ---------- Reviews: reveal as they scroll in ----------
-  if ('IntersectionObserver' in window){
-    document.documentElement.classList.add('js-reveal');
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(en){ if (en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
-    }, {threshold:.15});
-    document.querySelectorAll('.rev-card,.rev-feature').forEach(function(el, i){ el.style.transitionDelay = (i % 4) * 70 + 'ms'; io.observe(el); });
-  }
-  document.addEventListener('click', function(e){
-    if (e.target.closest && e.target.closest('.rev-cta')) track('reviews_click', {placement:'reviews'});
-  });
-
   // ---------- Header turns solid after the hero ----------
   var bar = document.getElementById('bar');
   function onScroll(){ bar.classList.toggle('solid', window.scrollY > 40); }
   window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
 })();
 </script>
-<script src="/consent.js"></script>
+<script src="consent.js"></script>
 </body>
 </html>
